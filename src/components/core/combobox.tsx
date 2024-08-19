@@ -1,12 +1,9 @@
 "use client"
 
 import * as React from "react"
-import { Check, ChevronsUpDown } from "lucide-react"
 
-import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import {
-  Command,
   CommandEmpty,
   CommandGroup,
   CommandInput,
@@ -21,7 +18,7 @@ import {
 import CommandComponent from "./command"
 
 /* eslint-disable @typescript-eslint/no-unused-vars */
- 
+
 import {
   Calculator,
   Calendar,
@@ -30,7 +27,7 @@ import {
   Smile,
   User,
 } from "lucide-react"
- 
+
 import {
   CommandDialog,
   CommandSeparator,
@@ -43,14 +40,9 @@ export function ComboboxDemo() {
   return (
     <Popover open={open} onOpenChange={setOpen}>
       <PopoverTrigger asChild>
-        <Button
-          variant="outline"
-          role="combobox"
-          aria-expanded={open}
-          className="w-full pl-4 pr-1 py-0 justify-between text-gray-400 rounded-lg"
-        >
-          <span className="mr-10 font-medium text-sm">Search for documentation...</span> <CommandComponent />
-        </Button>
+        <button className="w-full flex justify-between rounded-md py-1 pl-3 pr-1 text-slate-500 border border-slate-200 bg-slate-50/80 hover:text-slate-900 dark:border-slate-800 dark:bg-slate-950 dark:hover:bg-slate-800 dark:hover:text-slate-50">
+          <span className="mr-8 font-normal text-[13px]">Search for documentation...</span> <CommandComponent />
+        </button>
       </PopoverTrigger>
       <PopoverContent className="w-[200px] p-0">
         <CommandDialog open={open} onOpenChange={setOpen}>
