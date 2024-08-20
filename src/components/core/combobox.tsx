@@ -1,8 +1,7 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 "use client"
 
 import * as React from "react"
-
-import { Button } from "@/components/ui/button"
 import {
   CommandEmpty,
   CommandGroup,
@@ -16,8 +15,6 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover"
 import CommandComponent from "./command"
-
-/* eslint-disable @typescript-eslint/no-unused-vars */
 
 import {
   Calculator,
