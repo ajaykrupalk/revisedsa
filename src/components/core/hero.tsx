@@ -35,7 +35,7 @@ export default function Hero() {
                 </Button>
             </div>
             <div className="w-full flex justify-center mt-7">
-                <img src={HeroImage} alt="Notes" width="400" height="400" />
+                <img src={HeroImage} alt="Notes" width="500" height="500" />
             </div>
         </div>
     )
