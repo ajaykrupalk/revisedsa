@@ -7,14 +7,14 @@ import {
   CommandGroup,
   CommandInput,
   CommandItem,
-  CommandList,
+  CommandList
 } from "@/components/ui/command"
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover"
-import CommandComponent from "./command"
+import CommandComponent from "./Command"
 
 import {
   Calculator,
