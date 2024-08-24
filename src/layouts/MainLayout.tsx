@@ -1,7 +1,7 @@
-import Footer from "@/components/core/Footer";
-import Header from "@/components/core/Header";
-import Hero from "@/components/core/Hero";
-import Menu from "@/components/core/Menu";
+import Footer from "../components/core/Footer";
+import Header from "../components/core/Header";
+import Hero from "../components/core/Hero";
+import Menu from "../components/core/Menu";
 
 export default function MainLayout() {
   return (
