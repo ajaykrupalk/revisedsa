@@ -1,4 +1,4 @@
-import { ComboboxDemo } from "./combobox";
+import { ComboboxDemo } from "./ComboBox";
 
 export default function Header() {
     return (
