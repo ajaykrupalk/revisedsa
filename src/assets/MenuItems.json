@@ -4,6 +4,11 @@
             "path": "/introduction"
         }
     },
+    "Big O Notation": {
+        "Introduction": {
+            "path": "/big-o-notation"
+        }
+    },
     "Data Structures": {
         "Array": {
             "path": "/array"
