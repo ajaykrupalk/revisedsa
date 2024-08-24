@@ -8,7 +8,7 @@ export default function Hero() {
                 <div className='outline-none w-fit text-xs bg-gray-100 h-full p-1.5 rounded-full font-medium hover:ring-2 hover:ring-indigo-200'>
                     <span className="peer">
                         <span className='text-xs bg-slate-900 text-white rounded-full py-0.5 px-2 mr-1.5'>New</span>
-                        Notes for Arrays is live! 🎉
+                        Notes for Big O Notation is live! 🎉
                     </span>
                     <svg className='transition-transform duration-500 transform peer-hover:translate-x-0.5 hover:translate-x-0.5 ml-0.5 inline-flex' xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
@@ -35,7 +35,7 @@ export default function Hero() {
                 </Button>
             </div>
             <div className="w-full flex justify-center mt-7">
-                <img src={HeroImage} alt="Notes" width="400" height="400"/>
+                <img src={HeroImage} alt="Notes" width="400" height="400" />
             </div>
         </div>
     )

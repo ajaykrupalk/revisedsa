@@ -2,7 +2,7 @@ import { ComboboxDemo } from "./combobox";
 
 export default function Header() {
     return (
-        <div className="sticky top-0 left-0 w-full h-full pt-4 pl-4 pr-4 pb-1 flex flex-row justify-between backdrop-blur-sm bg-white/50">
+        <div className="sticky top-0 z-10 w-full h-full pt-4 pl-4 pr-4 pb-1 flex flex-row justify-between backdrop-blur-sm bg-white/30">
             <div className="flex items-center">
                 <h1 className="font-bold text-xl inline-flex items-end">revise.</h1>
             </div>
