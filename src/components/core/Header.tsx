@@ -1,10 +1,13 @@
+import { Link } from "react-router-dom";
 import { ComboboxDemo } from "./ComboBox";
 
 export default function Header() {
     return (
         <div className="sticky top-0 z-50 w-full h-full pt-4 pl-4 pr-4 pb-1 flex flex-row justify-between backdrop-blur bg-white/60 border border-white/40">
             <div className="flex items-center">
-                <h1 className="font-bold text-xl inline-flex items-end">revise.</h1>
+                <Link to="/">
+                    <h1 className="font-bold text-xl inline-flex items-end">revise.</h1>
+                </Link>
             </div>
             <div className="flex gap-x-2 items-center">
                 <ComboboxDemo />
