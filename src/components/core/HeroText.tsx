@@ -26,7 +26,7 @@ export default function HeroText() {
                     concepts and problems</p>
             </div>
             <div className="mt-3">
-                <Link to="/introduction">
+                <Link to="/docs/introduction">
                     <Button className="w-fit h-fit">
                         <span className="peer">Get Started</span>
                         <svg className='transition-transform duration-500 transform peer-hover:translate-x-0.5 hover:translate-x-0.5 ml-0.5 inline-flex' xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">

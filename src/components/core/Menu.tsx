@@ -7,7 +7,7 @@ export default function Menu() {
                 <h3 className="font-semibold text-slate-900">Getting Started</h3>
                 <div className="flex flex-col items-start">
                     <a className="font-medium text-gray-500 hover:text-slate-900">
-                    <Link to='/introduction'>Introduction</Link>
+                    <Link to='/docs/introduction'>Introduction</Link>
                     </a>
                 </div>
             </div>
