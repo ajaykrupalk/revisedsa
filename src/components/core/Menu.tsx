@@ -6,7 +6,7 @@ export default function Menu() {
             <div className="mt-3">
                 <h3 className="font-semibold text-slate-900">Getting Started</h3>
                 <div className="flex flex-col items-start">
-                    <a className="font-medium text-gray-500 hover:text-slate-900">
+                    <a className="font-normal text-gray-500 hover:text-slate-900">
                     <Link to='/docs/introduction'>Introduction</Link>
                     </a>
                 </div>
@@ -14,10 +14,10 @@ export default function Menu() {
             <div className="mt-3">
                 <h3 className="font-semibold">Data Structures</h3>
                 <div className="flex flex-col items-start">
-                    <a className="font-medium text-gray-500 hover:text-slate-900">Array</a>
-                    <a className="font-medium text-gray-500 hover:text-slate-900">String</a>
-                    <a className="font-medium text-gray-500 hover:text-slate-900">Hash Map</a>
-                    <a className="font-medium text-gray-500 hover:text-slate-900">Recursion</a>
+                    <a className="font-normal text-gray-500 hover:text-slate-900">Array</a>
+                    <a className="font-normal text-gray-500 hover:text-slate-900">String</a>
+                    <a className="font-normal text-gray-500 hover:text-slate-900">Hash Map</a>
+                    <a className="font-normal text-gray-500 hover:text-slate-900">Recursion</a>
                 </div>
             </div>
         </div>

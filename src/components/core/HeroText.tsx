@@ -22,7 +22,7 @@ export default function HeroText() {
                     <br />
                     Notes
                 </h1>
-                <p className="text-sm text-gray-500 font-medium">The quickest way to review LeetCode <br />
+                <p className="text-sm text-gray-500 font-normal">The quickest way to review LeetCode <br />
                     concepts and problems</p>
             </div>
             <div className="mt-3">
