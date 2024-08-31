@@ -33,9 +33,9 @@ export default function SearchDialog() {
     }, [])
 
     return (
-        <div className="w-full max-w-sm mx-auto">
-            <button className="w-full flex justify-between rounded-md py-1 pl-3 pr-1 text-slate-500 border border-slate-200 bg-slate-50/80 hover:text-slate-900 dark:border-slate-800 dark:bg-slate-950 dark:hover:bg-slate-800 dark:hover:text-slate-50" onClick={() => setOpen(true)}>
-                <span className="mr-8 font-normal text-[13px]">Search for documentation...</span>
+        <div className="w-36 sm:w-full max-w-sm mx-auto">
+            <button className="w-full flex justify-between rounded-md py-1 pl-3 pr-1 text-slate-500 border border-slate-200 bg-slate-50/30 hover:text-slate-900" onClick={() => setOpen(true)}>
+                <span className="mr-8 font-normal text-[13px] truncate">Search for documentation...</span>
                 <kbd className="pointer-events-none inline-flex h-5 select-none items-center gap-1 rounded border bg-muted px-1.5 font-mono text-[10px] font-normal text-muted-foreground opacity-100">
                     <span className="text-xs">⌘</span>K
                 </kbd>

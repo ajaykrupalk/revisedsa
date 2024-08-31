@@ -1,7 +1,7 @@
 export default function IntroductionPage() {
     return (
         <>
-            <div className="w-[45em]">
+            <div className="w-full p-4 lg:w-[45em] lg:p-0">
                 <div>
                     <p className="text-sm font-medium">
                         <span className="text-gray-500">

@@ -6,12 +6,16 @@ import { Outlet } from "react-router-dom";
 export default function MainLayout() {
   return (
     <>
-      <Header />
-      <div className="flex gap-x-1 h-full">
-        <Menu />
-        <Outlet />
+      <div className="max-w-full">
+        <Header />
+        <div className="flex gap-x-1 h-screen">
+          <div className="hidden sm:block">
+            <Menu />
+          </div>
+          <Outlet />
+        </div>
+        <Footer />
       </div>
-      <Footer/>
     </>
   )
 }

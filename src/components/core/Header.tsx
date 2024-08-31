@@ -1,13 +1,18 @@
 import { Link } from "react-router-dom";
 import SearchDialog from "./SearchBar";
+import MenuSheet from "./MenuSheet";
+
 
 export default function Header() {
     return (
-        <div className="sticky top-0 z-50 w-full h-full pt-4 pl-4 pr-4 pb-1 flex flex-row justify-between backdrop-blur bg-white/70 border border-white/40">
-            <div className="flex items-center">
-                <Link to="/">
+        <div className="max-w-full sticky top-0 z-50 h-full pt-2 px-2 pb-1 flex flex-row justify-between items-center backdrop-blur bg-white/70 border border-white/40 sm:pt-4 sm:pl-4 sm:pr-4">
+            <div>
+                <Link to="/" className="hidden sm:block">
                     <h1 className="font-bold text-xl inline-flex items-end">revise.</h1>
                 </Link>
+                <span className="sm:hidden">
+                    <MenuSheet/>
+                </span>
             </div>
             <div className="flex gap-x-2 items-center">
                 <SearchDialog />

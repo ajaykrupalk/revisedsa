@@ -4,7 +4,7 @@ import { Button } from "../ui/button";
 export default function HeroText() {
     return (
         <>
-            <div className="w-full flex justify-center">
+            <div className="w-full flex justify-center mt-2">
                 <div className='outline-none w-fit text-xs bg-gray-100 h-full p-1.5 rounded-full font-medium hover:ring-2 hover:ring-slate-200 group'>
                     <span className="peer">
                         <span className='text-xs bg-slate-900 text-white rounded-full py-0.5 px-2 mr-1.5'>New</span>
@@ -17,7 +17,7 @@ export default function HeroText() {
                 </div>
             </div>
             <div className="mt-2">
-                <h1 className="font-semibold text-7xl leading-tight">
+                <h1 className="font-semibold text-5xl leading-tight sm:text-7xl sm:leading-tight">
                     Simple DSA
                     <br />
                     Notes
