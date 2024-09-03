@@ -12,7 +12,7 @@ export default function IntroductionPage() {
                         </span>&thinsp;Introduction
                     </p>
                 </div>
-                <div className="mt-3 text-base text-slate-950 text-justify">
+                <div className="mt-3 text-base text-slate-950">
                     <h1 className="text-2xl font-semibold">Introduction</h1>
                     <div className="text-base mt-2 text-slate-900 font-normal leading-loose text-wrap">
                         <p>This is a collection of notes that I am curating during my learning journey of Data Structures and Algorithms as a quick reference.

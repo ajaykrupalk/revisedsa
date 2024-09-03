@@ -1,4 +1,11 @@
 'use client'
+type MenuItem = {
+    [key: string]: {
+        [subKey: string]: {
+            path: string;
+        }
+    }
+}
 
 import { useEffect, useState } from 'react'
 import {
@@ -13,9 +20,10 @@ import {
     CommandItem,
     CommandList,
     CommandSeparator,
-    CommandShortcut,
 } from "@/components/ui/command"
-import { Search, Settings, User, CreditCard, PlusCircle } from 'lucide-react'
+import { StickyNote } from 'lucide-react'
+import Menu from "../../assets/MenuItems.json";
+import { Link } from "react-router-dom";
 
 export default function SearchDialog() {
     const [open, setOpen] = useState(false)
@@ -47,34 +55,21 @@ export default function SearchDialog() {
                         <CommandInput placeholder="Type a command or search..." />
                         <CommandList>
                             <CommandEmpty>No results found.</CommandEmpty>
-                            <CommandGroup heading="Suggestions">
-                                <CommandItem>
-                                    <Search className="mr-2 h-4 w-4" />
-                                    <span>Search...</span>
-                                </CommandItem>
-                                <CommandItem>
-                                    <PlusCircle className="mr-2 h-4 w-4" />
-                                    <span>New Project</span>
-                                </CommandItem>
-                            </CommandGroup>
-                            <CommandSeparator />
-                            <CommandGroup heading="Settings">
-                                <CommandItem>
-                                    <User className="mr-2 h-4 w-4" />
-                                    <span>Profile</span>
-                                    <CommandShortcut>⌘P</CommandShortcut>
-                                </CommandItem>
-                                <CommandItem>
-                                    <CreditCard className="mr-2 h-4 w-4" />
-                                    <span>Billing</span>
-                                    <CommandShortcut>⌘B</CommandShortcut>
-                                </CommandItem>
-                                <CommandItem>
-                                    <Settings className="mr-2 h-4 w-4" />
-                                    <span>Settings</span>
-                                    <CommandShortcut>⌘S</CommandShortcut>
-                                </CommandItem>
-                            </CommandGroup>
+                            {Object.keys(Menu as MenuItem).map((section, index) => (
+                                <>
+                                    <CommandGroup heading={section} key={index}>
+                                        {Object.keys((Menu as MenuItem)[section]).map((subSection, subIndex) => (
+                                            <Link to={(Menu as MenuItem)[section][subSection].path} onClick={() => setOpen(false)}>
+                                                <CommandItem key={subIndex} className='cursor-pointer'>
+                                                    <StickyNote className="mr-2 h-4 w-4" />
+                                                    <span>{subSection}</span>
+                                                </CommandItem>
+                                            </Link>
+                                        ))}
+                                    </CommandGroup>
+                                    <CommandSeparator />
+                                </>
+                            ))}
                         </CommandList>
                     </Command>
                 </DialogContent>

@@ -1,26 +1,12 @@
 {
     "Getting Started": {
         "Introduction": {
-            "path": "/introduction"
+            "path": "/docs/introduction"
         }
     },
     "Big O Notation": {
-        "Introduction": {
-            "path": "/big-o-notation"
-        }
-    },
-    "Data Structures": {
-        "Array": {
-            "path": "/array"
-        },
-        "String": {
-            "path": "/string"
-        },
-        "Hash Map": {
-            "path": "/hash-map"
-        },
-        "Recursion": {
-            "path": "/recursion"
+        "Time Complexity": {
+            "path": ""
         }
     }
 }
