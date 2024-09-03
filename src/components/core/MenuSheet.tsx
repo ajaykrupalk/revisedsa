@@ -8,11 +8,14 @@ import {
 import Menu from "./Menu";
 import { PanelLeftOpen } from "lucide-react"
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 export default function MenuSheet() {
+    const [open, setOpen] = useState(false);
+
     return (
         <>
-            <Sheet>
+            <Sheet open={open} onOpenChange={setOpen}>
                 <SheetTrigger>
                     <PanelLeftOpen className="h-4 w-4" />
                 </SheetTrigger>
@@ -24,7 +27,7 @@ export default function MenuSheet() {
                             </Link>
                         </SheetTitle>
                     </SheetHeader>
-                    <Menu />
+                    <Menu onItemClick={() => setOpen(false)}/>
                 </SheetContent>
             </Sheet>
         </>
